@@ -3,21 +3,21 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Donate Crypto</title>
+<title>Caprio Cancer Donations</title>
 <style>
   body { font-family: Arial, sans-serif; background: #f4f4f4; text-align: center; padding: 30px; }
-  h1 { color: #222; }
+  h1 { color: #222; margin-bottom: 10px; }
   p { color: #555; }
   .crypto { margin: 20px auto; padding: 20px; background: #fff; border-radius: 10px; width: 90%; max-width: 350px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
-  h2 { color: #333; }
-  p.address { word-break: break-all; font-size: 14px; color: #111; }
+  h2 { color: #333; margin-bottom: 10px; }
+  p.address { word-break: break-all; font-size: 14px; color: #111; margin-top: 5px; }
   img { width: 150px; height: 150px; margin: 10px 0; }
   .counter { font-size: 18px; margin-top: 20px; color: #007700; font-weight: bold; }
 </style>
 </head>
 <body>
 
-<h1>Support Us with Crypto</h1>
+<h1>Support Caprio Cancer Fund</h1>
 <p>Scan the QR code or copy the wallet address below to donate. Every contribution counts!</p>
 
 <div class="crypto">
@@ -37,12 +37,9 @@
 </div>
 
 <script>
-// Simple manual counter (you can update manually)
-let totalDonations = 0; // Start at 0
+// Manual counter (update in browser console or later connect to API)
+let totalDonations = 0;
 document.getElementById('donationAmount').textContent = totalDonations;
-
-// Example: if you want to increase manually, open console and run:
-// totalDonations += 50; document.getElementById('donationAmount').textContent = totalDonations;
 </script>
 
 </body>
