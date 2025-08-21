@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Donate Crypto</title>
+<style>
+  body { font-family: Arial, sans-serif; background: #f4f4f4; text-align: center; padding: 30px; }
+  h1 { color: #222; }
+  p { color: #555; }
+  .crypto { margin: 20px auto; padding: 20px; background: #fff; border-radius: 10px; width: 90%; max-width: 350px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+  h2 { color: #333; }
+  p.address { word-break: break-all; font-size: 14px; color: #111; }
+  img { width: 150px; height: 150px; margin: 10px 0; }
+  .counter { font-size: 18px; margin-top: 20px; color: #007700; font-weight: bold; }
+</style>
+</head>
+<body>
+
+<h1>Support Us with Crypto</h1>
+<p>Scan the QR code or copy the wallet address below to donate. Every contribution counts!</p>
+
+<div class="crypto">
+  <h2>Bitcoin (BTC)</h2>
+  <img src="https://chart.googleapis.com/chart?cht=qr&chs=150x150&chl=bc1qdx2r3d7a44jl0tgr8gj55tljvlypy5nzlljvh7" alt="BTC QR">
+  <p class="address">bc1qdx2r3d7a44jl0tgr8gj55tljvlypy5nzlljvh7</p>
+</div>
+
+<div class="crypto">
+  <h2>Ethereum (ETH)</h2>
+  <img src="https://chart.googleapis.com/chart?cht=qr&chs=150x150&chl=0x6FEab0E58b53F5d274e6a0b235Ac4eCBcB6A146b" alt="ETH QR">
+  <p class="address">0x6FEab0E58b53F5d274e6a0b235Ac4eCBcB6A146b</p>
+</div>
+
+<div class="counter">
+  Total Donations Received: <span id="donationAmount">0</span> USD
+</div>
+
+<script>
+// Simple manual counter (you can update manually)
+let totalDonations = 0; // Start at 0
+document.getElementById('donationAmount').textContent = totalDonations;
+
+// Example: if you want to increase manually, open console and run:
+// totalDonations += 50; document.getElementById('donationAmount').textContent = totalDonations;
+</script>
+
+</body>
+</html>
